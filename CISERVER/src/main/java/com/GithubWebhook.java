@@ -189,7 +189,7 @@ public class GithubWebhook extends HttpServlet {
      */
     protected void runTestPhase(File workspace) throws Exception {
         System.out.println("Starting test phase...");
-        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "assignment2/CIserver/pom.xml", "test");
+        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "DD2480-LAB2 LAB (kopia)/CIserver/pom.xml", "test");
         pb.directory(workspace);
         ProcessResult testResult = processExecutor.execute(pb);
         System.out.println("Test phase exit code: " + testResult.getExitCode());
