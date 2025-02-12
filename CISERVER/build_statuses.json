@@ -38,4 +38,12 @@
   "success" : false,
   "details" : "Build and/or tests failed: Compilation failed with exit code 1\nPOM file DD2480-LAB2 LAB (kopia)/CIserver/pom.xml specified with the -f/--file command line argument does not exist\nPOM file DD2480-LAB2 LAB (kopia)/CIserver/pom.xml specified with the -f/--file command line argument does not exist\n",
   "timestamp" : 1739391484320
+}, {
+  "id" : "d1eb0c53-d27c-4de6-960c-d5139c4de5be",
+  "repoName" : "webhook-test",
+  "commitSHA" : "40fa9e6ebbe9840cbd22ab0a214237a1ebac6c5a",
+  "branch" : "refs/heads/main",
+  "success" : false,
+  "details" : "Build and/or tests failed: Compilation failed with exit code 1\nPOM file lab2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\nPOM file lab2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\n",
+  "timestamp" : 1739391584456
 } ]
