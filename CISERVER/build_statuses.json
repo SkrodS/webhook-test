@@ -46,4 +46,12 @@
   "success" : false,
   "details" : "Build and/or tests failed: Compilation failed with exit code 1\nPOM file lab2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\nPOM file lab2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\n",
   "timestamp" : 1739391584456
+}, {
+  "id" : "00734154-6dfe-42c5-86df-0856bf3a8815",
+  "repoName" : "webhook-test",
+  "commitSHA" : "2cf65856d5aaee7401e16f2c15ad4ab6683aa6b3",
+  "branch" : "refs/heads/main",
+  "success" : false,
+  "details" : "Build and/or tests failed: Compilation failed with exit code 1\nPOM file lab2/CISERVER/pom.xml specified with the -f/--file command line argument does not exist\nPOM file lab2/CISERVER/pom.xml specified with the -f/--file command line argument does not exist\n",
+  "timestamp" : 1739391630989
 } ]

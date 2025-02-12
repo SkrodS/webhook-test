@@ -174,7 +174,7 @@ public class GithubWebhook extends HttpServlet {
      */
     protected void runCompilePhase(File workspace) throws Exception {
         System.out.println("Starting compile phase...");
-        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "lab2/CISERVER/pom.xml", "clean", "compile");
+        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "pom.xml", "clean", "compile");
         pb.directory(workspace);
         ProcessResult compileResult = processExecutor.execute(pb);
         System.out.println("Compile phase exit code: " + compileResult.getExitCode());
@@ -189,7 +189,7 @@ public class GithubWebhook extends HttpServlet {
      */
     protected void runTestPhase(File workspace) throws Exception {
         System.out.println("Starting test phase...");
-        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "lab2/CISERVER/pom.xml", "test");
+        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "pom.xml", "test");
         pb.directory(workspace);
         ProcessResult testResult = processExecutor.execute(pb);
         System.out.println("Test phase exit code: " + testResult.getExitCode());
