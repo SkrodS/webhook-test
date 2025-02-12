@@ -125,14 +125,14 @@ public class GithubWebhook extends HttpServlet {
      * Function for cloning the repo and checking out the based on the listed SHA. 
      * 
      */
-    protected void runBuildAtCommit(String owner, String repo, String commitSHA) throws Exception {
+        protected void runBuildAtCommit(String owner, String repo, String commitSHA) throws Exception {
         String token = System.getenv("GITHUB_TOKEN");
         if (token == null) {
             throw new Exception("GITHUB_TOKEN environment variable is not set.");
-         }
+        }
         String cloneUrl = "https://" + token + "@github.com/" + owner + "/" + repo + ".git";
         File workspace = new File("workspace_" + System.currentTimeMillis());
-        
+    
         workspace.mkdirs();
         System.out.println(workspace.getAbsolutePath());
         try {
@@ -142,7 +142,7 @@ public class GithubWebhook extends HttpServlet {
             if (cloneResult.getExitCode() != 0) {
                 throw new Exception("Git clone failed: " + cloneResult.getOutput());
             }
-
+    
             // Check out the specific commit.
             ProcessBuilder checkoutPB = new ProcessBuilder("git", "checkout", commitSHA);
             checkoutPB.directory(workspace);
@@ -150,20 +150,25 @@ public class GithubWebhook extends HttpServlet {
             if (checkoutResult.getExitCode() != 0) {
                 throw new Exception("Git checkout of commit " + commitSHA + " failed: " + checkoutResult.getOutput());
             }
+    
+            // Verify the presence of the pom.xml file
+            File pomFile = new File(workspace, "pom.xml");
+            if (!pomFile.exists()) {
+                throw new Exception("pom.xml file not found in the cloned repository at " + pomFile.getAbsolutePath());
+            }
+    
             // Run the Maven build (compile and test) in the workspace.
             runCompilePhase(workspace);
             runTestPhase(workspace);
         } finally {
             // delete the workspace (clone of the repository)
-            try{
+            try {
                 FileUtils.deleteDirectory(workspace);
-                System.out.println("Deleted workspace." + workspace.getAbsolutePath());
+                System.out.println("Deleted workspace: " + workspace.getAbsolutePath());
             } catch (IOException e) {
                 System.out.println("Failed to delete workspace: " + e.getMessage());
             }
         }
-
-
     }
 
     
