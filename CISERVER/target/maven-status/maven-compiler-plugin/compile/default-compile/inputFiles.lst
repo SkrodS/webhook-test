@@ -1,10 +1,10 @@
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/BuildListServlet.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/BuildStatus.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/CIServer.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/DefaultGitHubClient.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/DefaultProcessExecutor.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/FileBuildStatusStore.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/GitHubClient.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/GithubWebhook.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/ProcessExecutor.java
-/Users/robinwidjeback/project/DD2480-LAB2 (kopia)/CISERVER/src/main/java/com/ProcessResult.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/BuildListServlet.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/BuildStatus.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/CIServer.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/DefaultGitHubClient.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/DefaultProcessExecutor.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/FileBuildStatusStore.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/GitHubClient.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/GithubWebhook.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/ProcessExecutor.java
+/Users/robinwidjeback/project/lab2/CISERVER/src/main/java/com/ProcessResult.java
