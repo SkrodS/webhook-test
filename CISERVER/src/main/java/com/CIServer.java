@@ -16,7 +16,7 @@ public class CIServer {
         handler.setContextPath("/");
         server.setHandler(handler);
         handler.addServlet(new ServletHolder(new GithubWebhook()), "/");
-
+        handler.addServlet(new ServletHolder(new BuildListServlet()), "/builds");
         return server;
     }
 

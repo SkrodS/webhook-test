@@ -1,6 +1,7 @@
 com/DefaultProcessExecutor.class
 com/CIServer.class
 com/FileBuildStatusStore$1.class
+com/BuildListServlet.class
 com/DefaultGitHubClient.class
 com/GitHubClient.class
 com/ProcessResult.class

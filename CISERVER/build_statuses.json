@@ -1,0 +1,17 @@
+[ {
+  "id" : "74fd706b-6c51-4a67-a91d-5d6caef0dad3",
+  "repoName" : "DD2480-LAB2",
+  "commitSHA" : "",
+  "branch" : "",
+  "success" : false,
+  "details" : "Build and/or tests failed: Git checkout of commit  failed: fatal: empty string is not a valid pathspec. please use . instead if you meant to match all paths\n",
+  "timestamp" : 1739390596556
+}, {
+  "id" : "95c5a01e-0e44-4041-9ce4-ca2204f040c2",
+  "repoName" : "webhook-test",
+  "commitSHA" : "",
+  "branch" : "",
+  "success" : false,
+  "details" : "Build and/or tests failed: Git checkout of commit  failed: fatal: empty string is not a valid pathspec. please use . instead if you meant to match all paths\n",
+  "timestamp" : 1739391059048
+} ]
