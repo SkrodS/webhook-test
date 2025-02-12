@@ -174,7 +174,7 @@ public class GithubWebhook extends HttpServlet {
      */
     protected void runCompilePhase(File workspace) throws Exception {
         System.out.println("Starting compile phase...");
-        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "assignment2/CIserver/pom.xml", "clean", "compile");
+        ProcessBuilder pb = new ProcessBuilder("mvn", "-B", "-f", "DD2480-LAB2 LAB (kopia)/CIserver/pom.xml", "clean", "compile");
         pb.directory(workspace);
         ProcessResult compileResult = processExecutor.execute(pb);
         System.out.println("Compile phase exit code: " + compileResult.getExitCode());

@@ -14,4 +14,12 @@
   "success" : false,
   "details" : "Build and/or tests failed: Git checkout of commit  failed: fatal: empty string is not a valid pathspec. please use . instead if you meant to match all paths\n",
   "timestamp" : 1739391059048
+}, {
+  "id" : "9289f02f-1baf-48fb-87fc-4cd1b450b264",
+  "repoName" : "webhook-test",
+  "commitSHA" : "eab3ea83ff2a0b4e0c449aca1a2cf8416752e01a",
+  "branch" : "refs/heads/main",
+  "success" : false,
+  "details" : "Build and/or tests failed: Compilation failed with exit code 1\nPOM file assignment2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\nPOM file assignment2/CIserver/pom.xml specified with the -f/--file command line argument does not exist\n",
+  "timestamp" : 1739391136416
 } ]
